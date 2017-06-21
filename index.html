@@ -95,7 +95,7 @@
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/uga.png" />
       </span>
     </a>
     <div class="tocify-wrapper" style="background-color: #B2B2B2;">
@@ -129,7 +129,7 @@
 
 <p>Questions? Visit our website: https://ugafinance.com</p>.
 
-<h1 id="authentication">Authentication</h1>
+<h1 id="#authentication">Authentication</h1>
 
 <blockquote>
 <p>To authorize, use this code: 014b6caa-958d-430d-b86a-102649457555</p>
@@ -204,7 +204,7 @@ You must replace <code>[API Key]</code> with your personal API key.
 <h3 id="http-request">HTTP Request</h3>
 
 <p><code class="prettyprint">POST https://staging.uportal360.com/service/rest/v1.0/customer</code></p>
-
+<!--
 <h3 id="query-parameters">Query Parameters</h3>
 
 <table><thead>
@@ -225,7 +225,7 @@ You must replace <code>[API Key]</code> with your personal API key.
 <td>If set to false, the result will include kittens that have already been adopted.</td>
 </tr>
 </tbody></table>
-
+-->
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
 </aside>
@@ -346,5 +346,21 @@ Remember — a happy kitten is an authenticated kitten!
           </div>
       </div>
     </div>
+      <script>
+        $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+               if (target.length) {
+                 $('html,body').animate({
+                     scrollTop: target.offset().top
+                }, 1000);
+                return false;
+                }
+            }
+        });  
+  </script>
   </body>
 </html>
